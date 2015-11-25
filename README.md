@@ -1,6 +1,6 @@
 # python-nfqueue
 
-This is a fork of chifflier/nfqueue-bindings without the Perl bindings.
+This is a fork of [chifflier/nfqueue-bindings](https://github.com/chifflier/nfqueue-bindings) without the Perl bindings.
 
 ## Overview
 
