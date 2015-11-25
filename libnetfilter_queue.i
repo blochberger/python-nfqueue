@@ -19,10 +19,6 @@
 
 %include python/libnetfilter_queue_python.i
 
-#elif defined(SWIGPERL)
-
-%include perl/libnetfilter_queue_perl.i
-
 #endif
 
 
