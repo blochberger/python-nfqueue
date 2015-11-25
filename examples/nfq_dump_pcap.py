@@ -2,11 +2,9 @@
 
 # need root privileges
 
-import struct
 import sys
-import time
 
-from socket import AF_INET, AF_INET6, inet_ntoa
+from socket import AF_INET
 
 sys.path.append('python')
 sys.path.append('build/python')
@@ -16,9 +14,10 @@ outputfile = None
 outputfilename = "dump.pcap"
 
 from scapy.packet import Packet
-from scapy.utils import PcapWriter, hexdump
+from scapy.utils import PcapWriter
 
 writer = None
+
 
 def cb(payload):
     data = payload.get_data()
@@ -50,4 +49,3 @@ except KeyboardInterrupt, e:
 
 q.unbind(AF_INET)
 q.close()
-
